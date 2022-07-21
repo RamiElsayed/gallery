@@ -1,5 +1,5 @@
-
 const { Gallery, Painting } = require("../../models");
+
 
 const renderHomePage = async (req, res) => {
   try {
@@ -56,7 +56,7 @@ const renderPaintingPage = async (req, res) => {
 
     const painting = paintingFromDB.get({ plain: true });
 
-    return res.render("painting", { painting });
+    return res.render("painting", {painting});
   } catch (err) {
     console.log(`[ERROR]: Failed to load painting page | ${err.message}`);
     return res.render("error");
