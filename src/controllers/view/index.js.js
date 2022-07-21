@@ -42,6 +42,7 @@ const renderGalleryPage = async (req, res) => {
     });
 
     const gallery = galleryFromDB.get({ plain: true });
+
     return res.render("gallery", { gallery });
   } catch (err) {
     console.log(`[ERROR]: Failed to load gallery page | ${err.message}`);
