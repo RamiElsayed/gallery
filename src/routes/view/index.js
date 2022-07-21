@@ -3,7 +3,7 @@ const {
   renderHomePage,
   renderPaintingPage,
   renderGalleryPage,
-} = require("../../src/controllers/view/index.js");
+} = require("../../controllers/view/index.js.js");
 
 const router = Router();
 

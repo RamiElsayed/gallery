@@ -1,4 +1,4 @@
-const router = require("express").Router();
+
 const { Gallery, Painting } = require("../../models");
 
 const renderHomePage = async (req, res) => {
@@ -12,7 +12,7 @@ const renderHomePage = async (req, res) => {
       ],
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
+    const galleries = galleriesFromDB.map((gallery) =>
       gallery.get({ plain: true })
     );
 
